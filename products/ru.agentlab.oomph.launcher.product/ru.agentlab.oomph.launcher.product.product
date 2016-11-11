@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Oomph Launcher" uid="ru.agentlab.oomph.launcher.product" id="ru.agentlab.oomph.launcher.product" application="ru.agentlab.oomph.launcher.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="false">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-consoleLog -nosplash
+      </programArgs>
+      <vmArgs>-Dosgi.framework.extensions=org.eclipse.fx.osgi
+      </vmArgs>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="ch.qos.logback.slf4j" fragment="true"/>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.xml"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.annotations"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.fx.core"/>
+      <plugin id="org.eclipse.fx.core.databinding"/>
+      <plugin id="org.eclipse.fx.core.di"/>
+      <plugin id="org.eclipse.fx.core.di.context"/>
+      <plugin id="org.eclipse.fx.core.fxml"/>
+      <plugin id="org.eclipse.fx.core.slf4j"/>
+      <plugin id="org.eclipse.fx.javafx"/>
+      <plugin id="org.eclipse.fx.osgi" fragment="true"/>
+      <plugin id="org.eclipse.fx.osgi.util"/>
+      <plugin id="org.eclipse.fx.ui.controls"/>
+      <plugin id="org.eclipse.fx.ui.databinding"/>
+      <plugin id="org.eclipse.fx.ui.di"/>
+      <plugin id="org.eclipse.fx.ui.panes"/>
+      <plugin id="org.eclipse.fx.ui.services"/>
+      <plugin id="org.eclipse.fx.ui.theme"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.slf4j.api"/>
+      <plugin id="org.slf4j.ext"/>
+      <plugin id="org.slf4j.jcl"/>
+      <plugin id="org.slf4j.jul"/>
+      <plugin id="org.slf4j.log4j"/>
+      <plugin id="ru.agentlab.oomph.launcher"/>
+   </plugins>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

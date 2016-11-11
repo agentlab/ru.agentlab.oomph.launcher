@@ -1,0 +1,14 @@
+package ru.agentlab.oomph.launcher
+
+import javafx.scene.layout.BorderPane
+import javafx.scene.control.Button
+import ru.agentlab.oomph.launcher.FXSubController
+
+component SubGraph controlledby FXSubController {
+	BorderPane {
+		center : Button id subbutton {
+			text : "Sub Button",
+			onAction : controllermethod sayHello
+		}
+	}
+}
