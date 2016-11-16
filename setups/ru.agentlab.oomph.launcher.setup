@@ -177,13 +177,13 @@
         userID="${github.user.id}"
         password="${github.user.password}">
       <query
-          summary="${scope.project.label} All Open Tasks">
+          summary="${scope.project.label} All Open">
         <attribute
             key="state"
             value="open::"/>
       </query>
       <query
-          summary="${scope.project.label} My Open Tasks">
+          summary="${scope.project.label} My Open">
         <attribute
             key="state"
             value="open::"/>
@@ -192,7 +192,7 @@
             value="${github.user.id}"/>
       </query>
       <query
-          summary="${scope.project.label} My Closed Tasks"
+          summary="${scope.project.label} My Closed"
           url="">
         <attribute
             key="state"
