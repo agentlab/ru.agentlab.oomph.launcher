@@ -1,1 +1,1 @@
-Здесь лежит конфигурация Eclipse IDE для Oomph
+This folder contains Eclipse Oomph configs
