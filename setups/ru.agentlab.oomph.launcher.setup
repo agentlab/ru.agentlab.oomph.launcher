@@ -88,76 +88,9 @@
           </detail>
         </annotation>
         <requirement
-            name="ch.qos.logback.slf4j"
-            versionRange="[1.0.7,1.1.0)"/>
-        <requirement
-            name="ch.qos.logback.classic"
-            versionRange="[1.0.7,1.1.0)"/>
-        <requirement
-            name="ch.qos.logback.core"
-            versionRange="[1.0.7,1.1.0)"/>
-        <requirement
-            name="com.google.inject.multibindings"/>
-        <requirement
-            name="com.google.inject.assistedinject"/>
-        <requirement
-            name="org.apache.commons.codec"/>
-        <requirement
-            name="org.apache.commons.io"/>
-        <requirement
-            name="org.hamcrest.core"
-            versionRange="[1.1.0,1.2.0)"/>
-        <requirement
-            name="org.junit"/>
-        <requirement
-            name="org.mockito"
-            versionRange="[1.9.5,1.10.0)"/>
-        <requirement
-            name="org.eclipse.equinox.sdk.feature.group"/>
-        <requirement
-            name="org.eclipse.fx.core.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.fx.target.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.platform.feature.group"/>
-        <requirement
-            name="org.eclipse.rcp.feature.group"/>
-        <requirement
-            name="org.eclipse.swt.dummyfragments.feature.group"/>
-        <requirement
-            name="org.slf4j.api"
-            versionRange="[1.7.2,1.7.3)"/>
-        <requirement
-            name="org.slf4j.jcl"
-            versionRange="[1.7.2,1.7.3)"/>
-        <requirement
-            name="org.slf4j.ext"
-            versionRange="[1.7.2,1.7.3)"/>
-        <requirement
-            name="org.slf4j.jul"
-            versionRange="[1.7.2,1.7.3)"/>
-        <requirement
-            name="org.slf4j.log4j"
-            versionRange="[1.7.2,1.7.3)"/>
-        <requirement
             name="*"/>
         <sourceLocator
             rootFolder="${ru.agentlab.oomph.launcher.git.clone.location}"/>
-        <repositoryList
-            name="Neon">
-          <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository"/>
-          <repository
-              url="http://download.eclipse.org/eclipse/updates/4.6"/>
-          <repository
-              url="http://download.eclipse.org/releases/neon"/>
-          <repository
-              url="http://agentlab.ru/p2/orbit/missing-swt-fragments/"/>
-          <repository
-              url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
-          <repository
-              url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-        </repositoryList>
       </targlet>
     </setupTask>
     <setupTask
