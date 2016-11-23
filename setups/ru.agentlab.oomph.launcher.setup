@@ -206,7 +206,7 @@
         xsi:type="projects:ProjectsBuildTask"/>
   </stream>
   <logicalProjectContainer
-      xsi:type="setup:ProjectCatalog"
-      href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']"/>
+      xsi:type="setup:Project"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']/@projects[name='osgi']/@projects[name='fx']"/>
   <description>IDE Setup for Oomph Launcher Project</description>
 </setup:Project>
