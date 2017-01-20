@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: FFA500;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.agentlab.oomph.launcher.Controller">
+   <children>
+      <Pane layoutX="273.0" layoutY="14.0" onMousePressed="#closeMenuButton" prefHeight="14.0" prefWidth="13.0" styleClass="menuClose" stylesheets="@../../../../../icons/test.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+.button1 {
+    -fx-background-color: #FFFFFF;
+}
+
+.button1:hover {
+    -fx-background-color: #87CEEB;
+}
+.img {
+	-fx-background-image: url('menu.png');
+}
+
+.img:hover {
+	-fx-background-image: url('menu_hover.png');
+	width: 25px;
+	height: 19px;
+}
+
+.top {
+	-fx-background-color: #E6E6FA;
+}
+
+.close {
+	-fx-background-image: url('exit.png');
+	width: 50px;
+	height: 25px;
+}
+
+.close:hover {
+	-fx-background-image: url('exit_hover.png');
+	width: 50px;
+	height: 25px;
+}
+
+.menuClose {
+	-fx-background-image: url('close.png')
+}
+.menuClose:hover {
+	-fx-background-image: url('close_hover.png')
+}
