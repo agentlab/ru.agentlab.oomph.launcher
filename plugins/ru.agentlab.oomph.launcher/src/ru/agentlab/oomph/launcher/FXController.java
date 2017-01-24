@@ -22,7 +22,7 @@ public class FXController {
 	}
 
 	@FXML
-	void sayHello() {
-		service.print("Hello World!");
+    void sayHello() {
+        service.print(SocketListener.callURL("http://localhost:8080/hello/ihello/hello2"));
 	}
 }
