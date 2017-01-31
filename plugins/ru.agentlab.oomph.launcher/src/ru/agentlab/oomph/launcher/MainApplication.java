@@ -19,7 +19,7 @@ public class MainApplication {
 		loader.setLocation(getClass().getResource("ExampleGraph.fxml"));
 		try {
 			BorderPane pane = loader.load();
-			Scene s = new Scene(pane, 200, 200);
+            Scene s = new Scene(pane, 300, 50);
 			primaryStage.setScene(s);
 			primaryStage.show();
 		}

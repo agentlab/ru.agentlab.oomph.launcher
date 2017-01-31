@@ -5,14 +5,15 @@
 
 <?import java.lang.*?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="ru.agentlab.oomph.launcher.FXController">
 
 	<center>
-		<Button fx:id="button" text="Hello World!" onAction="#sayHello"/> 
+		<TextField fx:id="textField"/> 
 	</center>
 	<bottom>
-		<fx:include source="/ru/agentlab/oomph/launcher/SubGraph.fxml" />
+		<Button fx:id="button" text="GET" onAction="#sayHello" prefWidth="300"/> 
 	</bottom>
 </BorderPane>

@@ -2,14 +2,15 @@ package ru.agentlab.oomph.launcher
 
 import javafx.scene.layout.BorderPane
 import javafx.scene.control.Button
+import javafx.scene.control.TextField
 import ru.agentlab.oomph.launcher.FXController
 
 component ExampleGraph controlledby FXController {
 	BorderPane {
-		center: Button id button {
-			text : "Hello World!",
+		center: TextField id textField{}
+		,	bottom : Button id button {
+			text : "GET",
 			onAction : controllermethod sayHello
-		},
-		bottom : include ru.agentlab.oomph.launcher.SubGraph
+			}
 	}
 }
