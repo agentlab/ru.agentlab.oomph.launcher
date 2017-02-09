@@ -19,12 +19,14 @@ public class RestClient {
 	public static void main(String args[]) {
 
 		Client client = Client.create();
-		WebResource webResource = client.resource("http://localhost:8080/RestWebService/rest/postXML");
+        WebResource webResource = client.resource("http://localhost:8080/RestWebService/rest/postJSON");
 
 		Student student = new Student("Veronika", "Dyoma");
 
-		Student studentFromRest = webResource.type(MediaType.APPLICATION_XML).accept(MediaType.APPLICATION_XML).post(new GenericType<Student>() {
-		}, student);
+        Student studentFromRest = webResource.type(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON).post(
+            new GenericType<Student>()
+            {
+            }, student);
 
 		System.out.println(studentFromRest);
 	}

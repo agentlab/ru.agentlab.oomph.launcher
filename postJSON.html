@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  type="text/javascript">
+function formSubmit()
+{
+var fName = document.getElementById("fName").value;
+var lName = document.getElementById("lName").value; 
+
+var data = JSON.stringify({
+  "firstName": fName,
+  "lastName": lName
+});
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.open("POST", "http://localhost:8080/RestWebService/rest/postJSON", false);
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("cache-control", "no-cache");
+
+xhr.send(data);
+}
+</script>
+</head>
+<body>
+<form id="myForm" name="myForm">
+First name: <input type="text" name="fname" id="fName"><br>
+Last  name: <input type="text" name="lname" id="lName"><br><br>
+<input type="button" onclick="formSubmit()" value="Send form data!">
+</form>
+
+</body>
+</html>
