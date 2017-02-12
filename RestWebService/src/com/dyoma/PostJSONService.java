@@ -12,6 +12,7 @@ import javax.ws.rs.core.MediaType;
 
 import com.dyoma.domain.Student;
 
+import launcher.MainApp;
 /**
  * @author Nika
  *
@@ -20,10 +21,12 @@ import com.dyoma.domain.Student;
 public class PostJSONService {
 
     //@Produces(MediaType.APPLICATION_JSON)
-	@POST
+    @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void getStudentAsJSON(@Context HttpHeaders headers, Student student) {
+    public void getStudentAsJSON(@Context HttpHeaders headers, Student student) throws InterruptedException {
         System.out.println(student.toString());
-        //return Response.ok(student).build();
+        javafx.application.Application.launch(MainApp.class);
+        MainApp mainApp = MainApp.waitForMainApp();
+        mainApp.setButtonName(student.toString());
 	}
 }

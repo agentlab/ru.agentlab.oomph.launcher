@@ -31,6 +31,6 @@ public class FXController {
     void sayHello() {
         //service.print(SocketListener.callURL("http://localhost:8080/hello/ihello/hello2"));
         service.print("Hello");
-        textField.setText(SocketListener.callURL("http://localhost:8080/hello/ihello/hello2"));
+        textField.setText(SocketListener.callURL("http://localhost:8080/RestWebService/rest/helloWorld/hello"));
 	}
 }

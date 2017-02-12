@@ -25,4 +25,11 @@ public class HelloWorldRestService {
 		return "Hello " + name;
 	}
 
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/hello")
+    public String getCelcius(@Context HttpHeaders headers) {
+        return "Hello " + "World!";
+    }
+
 }
