@@ -30,7 +30,9 @@ public class FXController {
     @FXML
     void sayHello() {
         //service.print(SocketListener.callURL("http://localhost:8080/hello/ihello/hello2"));
-        service.print("Hello");
-        textField.setText(SocketListener.callURL("http://localhost:8080/RestWebService/rest/helloWorld/hello"));
+        //service.print("Hello");
+        //textField.setText(SocketListener.callURL("http://localhost:8080/RestWebService/rest/helloWorld/hello"));
+        textField.setText(SocketListener.readFile(
+            "C:\\eclipse\\oomph-launcher-master3\\git\\ru.agentlab.oomph.launcher\\fakeDB.txt"));
 	}
 }

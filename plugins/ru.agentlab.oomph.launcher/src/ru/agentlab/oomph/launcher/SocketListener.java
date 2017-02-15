@@ -4,6 +4,9 @@
 package ru.agentlab.oomph.launcher;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
@@ -50,6 +53,27 @@ public class SocketListener {
         }
 
         return sb.toString();
+    }
+
+    public static String readFile(String fileName) {
+        String line = null;
+        try
+        {
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            line = bufferedReader.readLine();
+            System.out.println(line);
+            bufferedReader.close();
+        }
+        catch (FileNotFoundException ex)
+        {
+            System.out.println("Unable to open file '" + fileName + "'");
+        }
+        catch (IOException ex)
+        {
+            System.out.println("Error reading file '" + fileName + "'");
+        }
+        return line;
     }
 
 }
