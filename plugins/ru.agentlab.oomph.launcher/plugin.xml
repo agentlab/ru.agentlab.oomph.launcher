@@ -18,10 +18,10 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="ru.agentlab.oomph.launcher.application"
-            name="ru.agentlab.oomph.launcher">
+            name="Oomph Launcher">
          <property
                name="appName"
-               value="ru.agentlab.oomph.launcher">
+               value="Oomph Launcher">
          </property>
       </product>
    </extension>
